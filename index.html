@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLIFFORD SHOP</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
+    color: #222;
+    background: #fff;
+  }
+
+  /* Header */
+  .site-header {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 50px 20px 20px;
+    text-align: center;
+  }
+  .site-logo {
+  max-width: 330px;
+  height: auto;
+}  
+
+  /* Nav bar */
+  .nav-bar {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 16px 20px;
+    border-bottom: 1px solid #222;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  .nav-bar a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Product grid */
+  .product-grid {
+    max-width: 1240px;
+    margin: 40px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+    padding: 0 20px;
+  }
+  .product-card { cursor: pointer; }
+  .product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 14px;
+  }
+  .product-name {
+    font-size: 14px;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  .product-price {
+    font-size: 13px;
+    color: #666;
+  }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
+    .site-header h1 { font-size: 28px; }
+  }
+
+  /* Mobile */
+  @media (max-width: 560px) {
+    .site-header { padding: 30px 16px 16px; }
+    .site-header h1 { font-size: 22px; letter-spacing: 1.5px; }
+    .nav-bar { gap: 16px; padding: 12px 16px; font-size: 12px; justify-content: center; }
+    .product-grid { grid-template-columns: 1fr; gap: 30px; padding: 0 16px; margin: 30px auto 40px; }
+    .product-name { font-size: 13px; }
+    .product-price { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+  <a href="https://smartstore.naver.com/cm900">
+    <img src="images/logo1.png" alt="CLIFFORD SHOP" class="site-logo">
+  </a>
+</header>
+
+  <nav class="nav-bar">
+    <a href="#">SHIRTS</a>
+    <a href="#">KNITWEAR</a>
+    <a href="#">OUTER</a>
+    <a href="#">ACC</a>
+  </nav>
+
+  <div class="product-grid">
+
+    <a href="products/shirts1.html" class="product-card">
+      <div class="product-image" style="background-image:url('images/shirts1.png');"></div>
+      <div class="product-name">클래식 드레스 셔츠</div>
+      <div class="product-price">169,000원</div>
+    </a>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('images/shirts2.png');"></div>
+      <div class="product-name">소프트 캐쥬얼 셔츠</div>
+      <div class="product-price">209,000원</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('images/knit1.png');"></div>
+      <div class="product-name">FW 니트 웨어</div>
+      <div class="product-price">329,000원</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('images/knit2.png');"></div>
+      <div class="product-name">100% 프리미어 캐시미어 스웨터</div>
+      <div class="product-price">599,000원</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('images/jacket1.png');"></div>
+      <div class="product-name">소프트 캐쥬얼 자켓 &amp; 점퍼</div>
+      <div class="product-price">749,000원</div>
+    </div>
+
+    <div class="product-card">
+      <div class="product-image" style="background-image:url('images/acc1.png');"></div>
+      <div class="product-name">100% 캐시미어 머플러</div>
+      <div class="product-price">259,000원</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
