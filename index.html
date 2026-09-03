@@ -5,139 +5,84 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CLIFFORD SHOP</title>
 <style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif;
-    color: #222;
-    background: #fff;
-  }
-
-  /* Header */
-  .site-header {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 50px 20px 20px;
-    text-align: center;
-  }
-  .site-logo {
-  max-width: 330px;
-  height: auto;
-}  
-
-  /* Nav bar */
-  .nav-bar {
-    max-width: 1240px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    padding: 16px 20px;
-    border-bottom: 1px solid #222;
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-  .nav-bar a {
-    text-decoration: none;
-    color: #333;
-  }
-
-  /* Product grid */
-  .product-grid {
-    max-width: 1240px;
-    margin: 40px auto 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px 30px;
-    padding: 0 20px;
-  }
-  .product-card { cursor: pointer; }
-  .product-image {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 14px;
-  }
-  .product-name {
-    font-size: 14px;
-    color: #222;
-    margin-bottom: 6px;
-  }
-  .product-price {
-    font-size: 13px;
-    color: #666;
-  }
-
-  /* Tablet */
-  @media (max-width: 900px) {
-    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
-    .site-header h1 { font-size: 28px; }
-  }
-
-  /* Mobile */
-  @media (max-width: 560px) {
-    .site-header { padding: 30px 16px 16px; }
-    .site-header h1 { font-size: 22px; letter-spacing: 1.5px; }
-    .nav-bar { gap: 16px; padding: 12px 16px; font-size: 12px; justify-content: center; }
-    .product-grid { grid-template-columns: 1fr; gap: 30px; padding: 0 16px; margin: 30px auto 40px; }
-    .product-name { font-size: 13px; }
-    .product-price { font-size: 12px; }
-  }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; background: #fff; }
+.site-header { max-width: 1240px; margin: 0 auto; padding: 50px 20px 20px; text-align: center; }
+.site-logo { max-width: 280px; height: auto; }
+.nav-bar { max-width: 1240px; margin: 0 auto; display: flex; justify-content: flex-end; gap: 30px; padding: 16px 20px; border-bottom: 1px solid #222; font-size: 14px; letter-spacing: 1px; }
+.nav-bar a { text-decoration: none; color: #333; }
+.product-grid { max-width: 1240px; margin: 40px auto 60px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 50px 30px; padding: 0 20px; }
+.product-card { cursor: pointer; color: inherit; text-decoration: none; display: block; }
+.product-image { width: 100%; aspect-ratio: 10 / 7; background-size: contain; background-repeat: no-repeat; background-position: center; background-color: #f2f2f2; margin-bottom: 14px; }
+.product-name { font-size: 15px; color: #222; font-weight: 600; margin-bottom: 4px; }
+.product-price { font-size: 13px; color: #666; }
+@media (max-width: 900px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 20px; }
+}
+@media (max-width: 560px) {
+  .site-header { padding: 30px 16px 16px; }
+  .nav-bar { gap: 16px; padding: 12px 16px; font-size: 12px; justify-content: center; }
+  .product-grid { grid-template-columns: 1fr; gap: 30px; padding: 0 16px; margin: 30px auto 40px; }
+}
 </style>
 </head>
 <body>
 
   <header class="site-header">
-  <a href="https://smartstore.naver.com/cm900">
-    <img src="images/logo1.png" alt="CLIFFORD SHOP" class="site-logo">
-  </a>
-</header>
+    <a href="https://smartstore.naver.com/cm900">
+      <img src="images/logo1.png" alt="CLIFFORD SHOP" class="site-logo">
+    </a>
+  </header>
 
   <nav class="nav-bar">
-    <a href="#">SHIRTS</a>
-    <a href="#">KNITWEAR</a>
-    <a href="#">OUTER</a>
-    <a href="#">ACC</a>
+    <a href="categories/dress-shirts.html">SHIRTS</a>
+    <a href="categories/knitwear.html">KNITWEAR</a>
+    <a href="categories/outer.html">OUTER</a>
+    <a href="categories/acc.html">ACC</a>
   </nav>
 
   <div class="product-grid">
-
-    <a href="products/shirts1.html" class="product-card">
+    <a href="categories/dress-shirts.html" class="product-card">
       <div class="product-image" style="background-image:url('images/shirts1.png');"></div>
-      <div class="product-name">클래식 드레스 셔츠</div>
-      <div class="product-price">169,000원</div>
+      <div class="product-name">드레스 셔츠</div>
+      <div class="product-price">169,000원 ~</div>
     </a>
 
-    <a href="products/shirts2.html" class="product-card">
+    <a href="categories/casual-shirts.html" class="product-card">
       <div class="product-image" style="background-image:url('images/shirts2.png');"></div>
-      <div class="product-name">소프트 캐쥬얼 셔츠</div>
-      <div class="product-price">209,000원</div>
+      <div class="product-name">캐주얼 셔츠</div>
+      <div class="product-price">239,000원 ~</div>
     </a>
 
-    <a href="products/csknit_01.html" class="product-card">
-      <div class="product-image" style="background-image:url('images/knit1.png');"></div>
-      <div class="product-name">FW 니트 웨어</div>
-      <div class="product-price">239,000원</div>
-    </a>
-
-    <a href="products/wsknit_01.html" class="product-card">
-      <div class="product-image" style="background-image:url('images/knit2.png');"></div>
-      <div class="product-name">100% 프리미어 캐시미어 스웨터</div>
-      <div class="product-price">499,000원</div>
-    </a>
-
-    <a href="products/jacket_01.html" class="product-card">
+    <a href="categories/outer.html" class="product-card">
       <div class="product-image" style="background-image:url('images/jacket1.png');"></div>
-      <div class="product-name">소프트 캐쥬얼 자켓 &amp; 점퍼</div>
-      <div class="product-price">779,000원</div>
+      <div class="product-name">자켓 &amp; 점퍼</div>
+      <div class="product-price">799,000원 ~</div>
     </a>
 
-    <a href="products/pants_01.html" class="product-card">
+    <a href="categories/pants.html" class="product-card">
       <div class="product-image" style="background-image:url('images/pant1.png');"></div>
-      <div class="product-name">Easy & Soft Casual 팬츠</div>
-      <div class="product-price">279,000원</div>
+      <div class="product-name">팬츠</div>
+      <div class="product-price">279,000원 ~</div>
     </a>
 
+    <a href="categories/knitwear.html" class="product-card">
+      <div class="product-image" style="background-image:url('images/knit2.png');"></div>
+      <div class="product-name">캐시미어 니트웨어</div>
+      <div class="product-price">499,000원 ~</div>
+    </a>
+
+    <a href="categories/knit-vest.html" class="product-card">
+      <div class="product-image" style="background-image:url('images/knit1.png');"></div>
+      <div class="product-name">니트 베스트 &amp; 가디건</div>
+      <div class="product-price">239,000원 ~</div>
+    </a>
+
+    <a href="categories/acc.html" class="product-card">
+      <div class="product-image" style="background-image:url('images/acc1.png');"></div>
+      <div class="product-name">머플러 / 액세서리</div>
+      <div class="product-price">239,000원 ~</div>
+    </a>
   </div>
 
 </body>
