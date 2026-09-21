@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>깅엄 체크 소프트 브러시드 캐주얼 셔츠 | CLIFFORD SHOP</title>
+<title>마이크로 텍스쳐 소프트 캐쥬얼 셔츠 | CLIFFORD SHOP</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; background: #fff; }
@@ -23,6 +23,10 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
 .info-section-title { font-size: 13px; font-weight: 700; margin: 22px 0 10px; }
 .info-list { font-size: 13px; line-height: 1.9; color: #444; }
 .store-link { color: #222; text-decoration: underline; font-size: 13px; }
+.thumbnail-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; max-width: 450px; }
+.thumbnail { width: 60px; height: 76px; background-size: cover; background-position: center; cursor: pointer; opacity: 0.6; border: 1px solid transparent; }
+.thumbnail:hover { opacity: 1; }
+.thumbnail.active { opacity: 1; border: 1px solid #222; }
 .product-footer { max-width: 1000px; margin: 50px auto 0; padding: 20px 20px 40px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: center; }
 .contact-line { font-size: 14px; color: #333; }
 .contact-line strong { margin-left: 8px; font-weight: 700; }
@@ -53,37 +57,48 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </header>
 
   <nav class="nav-bar">
-    <a href="../categories/dress-shirts.html">SHIRTS</a>
-    <a href="../categories/knitwear.html">KNITWEAR</a>
-    <a href="../categories/outer.html">OUTER</a>
-    <a href="../categories/acc.html">ACC</a>
+    <a href="../index.html">SHIRTS</a>
+    <a href="../index.html">KNITWEAR</a>
+    <a href="../index.html">OUTER</a>
+    <a href="../index.html">ACC</a>
   </nav>
 
   <div class="product-top">
 
     <div class="product-info-block">
-      <div class="product-title">깅엄 체크 소프트 브러시드 캐주얼 셔츠</div>
-      <div class="product-subtitle">브라운과 아이보리 조합의 클래식 깅엄 체크 셔츠</div>
-      <div class="product-price">399,000원</div>
+      <div class="product-title">마이크로 텍스쳐 소프트 캐쥬얼 셔츠</div>
+      <div class="product-subtitle">비즈니스 캐쥬얼부터 위켄드 룩까지 활용하기 좋은 아이템</div>
+      <div class="product-price">199,000원</div>
     </div>
 
     <div class="product-image-block">
-      <div class="product-main-image" style="background-image:url('../images/shirt19.jpg');"></div>
+      <div class="product-main-image" id="mainImage" style="background-image:url('../images/CDCZ4C2302_G0_01.JPG');"></div>
+      <div class="thumbnail-row">
+        <div class="thumbnail active" style="background-image:url('../images/CDCZ4C2302_G0_01.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_01.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_02.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_02.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_03.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_03.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_04.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_04.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_05.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_05.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_06.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_06.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_07.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_07.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_08.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_08.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CDCZ4C2302_G0_09.JPG');" onclick="changeImage('../images/CDCZ4C2302_G0_09.JPG', this)"></div>
+      </div>
     </div>
 
   </div>
 
   <div class="product-description">
     <div class="description-text">
-      클래식한 깅엄 체크를 브라운과 아이보리의 부드러운 조합으로 재해석한 셔츠입니다. 포근한 브러시드 터치가 계절감을 더하면서도 패턴의 선명함은 차분하게 유지되어, 단독 착용과 레이어링 모두 자연스럽습니다. 베이지 치노나 브라운 계열 팬츠와 함께 편안한 주말 룩으로, 네이비 재킷 안에서는 따뜻한 인상의 비즈니스 캐주얼로 연출하기 좋습니다.
+      미세한 조직감과 은은한 멜란지 표정이 어우러져 단색 셔츠보다 깊이 있는 인상을 연출하는 캐주얼 셔츠입니다. 부드러운 라이트 그레이 블루 톤과 군더더기 없는 실루엣, 깔끔한 아웃포켓 디자인이 조화를 이루어 편안하면서도 정돈된 분위기를 완성합니다. 니트나 재킷 안에 레이어링한 비즈니스 캐주얼부터 치노 팬츠와 함께하는 주말 외출까지 활용하기 좋은 세련된 데일리 아이템입니다.
     </div>
 
     <div class="info-section-title">[상품정보고시]</div>
     <div class="info-list">
-      품번: BDSZ4C4103<br>
-      색상: 브라운<br>
-      소재: 면 100%<br>
-      제조국: 한국
+      품번: CDCZ4C2302<br>
+      색상: 그레이<br>
+      소재: 폴리에스터 63% 레이온 37%<br>
+      제조국: 베트남
     </div>
 
     <div class="info-section-title">[오프라인 매장 구입 안내]</div>
@@ -97,9 +112,18 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </div>
 
   <div class="button-row">
-    <a href="../categories/casual-shirts.html" class="btn btn-outline">목록</a>
+    <a href="../index.html" class="btn btn-outline">목록</a>
     <a href="https://smartstore.naver.com/cm900" class="btn btn-fill">온라인 구매</a>
   </div>
+
+
+  <script>
+  function changeImage(src, el) {
+    document.getElementById('mainImage').style.backgroundImage = "url('" + src + "')";
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+  </script>
 
 </body>
 </html>

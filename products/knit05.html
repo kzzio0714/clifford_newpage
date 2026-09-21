@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>퓨어 캐시미어 폴로 니트 | CLIFFORD SHOP</title>
+<title>퓨어 캐시미어 폴로니트 | CLIFFORD SHOP</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; background: #fff; }
@@ -23,6 +23,10 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
 .info-section-title { font-size: 13px; font-weight: 700; margin: 22px 0 10px; }
 .info-list { font-size: 13px; line-height: 1.9; color: #444; }
 .store-link { color: #222; text-decoration: underline; font-size: 13px; }
+.thumbnail-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; max-width: 450px; }
+.thumbnail { width: 60px; height: 76px; background-size: cover; background-position: center; cursor: pointer; opacity: 0.6; border: 1px solid transparent; }
+.thumbnail:hover { opacity: 1; }
+.thumbnail.active { opacity: 1; border: 1px solid #222; }
 .product-footer { max-width: 1000px; margin: 50px auto 0; padding: 20px 20px 40px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: center; }
 .contact-line { font-size: 14px; color: #333; }
 .contact-line strong { margin-left: 8px; font-weight: 700; }
@@ -53,29 +57,40 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </header>
 
   <nav class="nav-bar">
-    <a href="../categories/dress-shirts.html">SHIRTS</a>
-    <a href="../categories/knitwear.html">KNITWEAR</a>
-    <a href="../categories/outer.html">OUTER</a>
-    <a href="../categories/acc.html">ACC</a>
+    <a href="../index.html">SHIRTS</a>
+    <a href="../index.html">KNITWEAR</a>
+    <a href="../index.html">OUTER</a>
+    <a href="../index.html">ACC</a>
   </nav>
 
   <div class="product-top">
 
     <div class="product-info-block">
-      <div class="product-title">퓨어 캐시미어 폴로 니트</div>
-      <div class="product-subtitle">깊이 있는 그린 컬러의 단정한 폴로 칼라 캐시미어 니트</div>
-      <div class="product-price">499,000원</div>
+      <div class="product-title">퓨어 캐시미어 폴로니트</div>
+      <div class="product-subtitle">세련된 비즈니스 캐쥬얼 부터 위켄드 모임까지 품격있게</div>
+      <div class="product-price">529,000원</div>
     </div>
 
     <div class="product-image-block">
-      <div class="product-main-image" style="background-image:url('../images/knit05.jpg');"></div>
+      <div class="product-main-image" id="mainImage" style="background-image:url('../images/CSTZ3C2305_E0_01.JPG');"></div>
+      <div class="thumbnail-row">
+        <div class="thumbnail active" style="background-image:url('../images/CSTZ3C2305_E0_01.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_01.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_02.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_02.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_03.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_03.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_04.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_04.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_05.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_05.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_06.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_06.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_07.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_07.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_08.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_08.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/CSTZ3C2305_E0_09.JPG');" onclick="changeImage('../images/CSTZ3C2305_E0_09.JPG', this)"></div>
+      </div>
     </div>
 
   </div>
 
   <div class="product-description">
     <div class="description-text">
-      캐시미어 100%의 가볍고 포근한 감촉을 단정한 폴로 칼라 디자인으로 완성했습니다. 깊이 있는 그린 컬러가 얼굴과 스타일에 생기를 더하면서도 차분한 톤을 유지해, 단독 착용만으로도 인상적인 룩을 연출합니다. 재킷 안에 입는 세련된 비즈니스 캐주얼부터 슬랙스나 데님을 활용한 주말 모임까지 품격 있게 어울립니다.
+      캐시미어 100%의 가볍고 포근한 감촉을 단정한 폴로 칼라 디자인으로 완성했습니다.깊이 있는 그린 컬러가 얼굴과 스타일에 생기를 더하면서도 차분한 톤을 유지해, 단독착용만으로도 인상적인 룩을 연출합니다. 재킷 안에 입는 세련된 비즈니스 캐주얼부터 슬랙스나 데님을 활용한 주말 모임까지 품격 있게 어울립니다
     </div>
 
     <div class="info-section-title">[상품정보고시]</div>
@@ -97,9 +112,18 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </div>
 
   <div class="button-row">
-    <a href="../categories/knitwear.html" class="btn btn-outline">목록</a>
+    <a href="../index.html" class="btn btn-outline">목록</a>
     <a href="https://smartstore.naver.com/cm900" class="btn btn-fill">온라인 구매</a>
   </div>
+
+
+  <script>
+  function changeImage(src, el) {
+    document.getElementById('mainImage').style.backgroundImage = "url('" + src + "')";
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+  </script>
 
 </body>
 </html>

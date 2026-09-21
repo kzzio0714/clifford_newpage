@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>하이브리드 패디드 니트 베스트 | CLIFFORD SHOP</title>
+<title>퓨어 메리노 울 모크넥 니트 | CLIFFORD SHOP</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; background: #fff; }
@@ -23,6 +23,10 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
 .info-section-title { font-size: 13px; font-weight: 700; margin: 22px 0 10px; }
 .info-list { font-size: 13px; line-height: 1.9; color: #444; }
 .store-link { color: #222; text-decoration: underline; font-size: 13px; }
+.thumbnail-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; max-width: 450px; }
+.thumbnail { width: 60px; height: 76px; background-size: cover; background-position: center; cursor: pointer; opacity: 0.6; border: 1px solid transparent; }
+.thumbnail:hover { opacity: 1; }
+.thumbnail.active { opacity: 1; border: 1px solid #222; }
 .product-footer { max-width: 1000px; margin: 50px auto 0; padding: 20px 20px 40px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; text-align: center; }
 .contact-line { font-size: 14px; color: #333; }
 .contact-line strong { margin-left: 8px; font-weight: 700; }
@@ -53,36 +57,47 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </header>
 
   <nav class="nav-bar">
-    <a href="../categories/dress-shirts.html">SHIRTS</a>
-    <a href="../categories/knitwear.html">KNITWEAR</a>
-    <a href="../categories/outer.html">OUTER</a>
-    <a href="../categories/acc.html">ACC</a>
+    <a href="../index.html">SHIRTS</a>
+    <a href="../index.html">KNITWEAR</a>
+    <a href="../index.html">OUTER</a>
+    <a href="../index.html">ACC</a>
   </nav>
 
   <div class="product-top">
 
     <div class="product-info-block">
-      <div class="product-title">하이브리드 패디드 니트 베스트</div>
-      <div class="product-subtitle">보온성과 스타일을 균형 있게 담은 패디드 니트 베스트</div>
-      <div class="product-price">399,000원</div>
+      <div class="product-title">퓨어 메리노 울 모크넥 니트</div>
+      <div class="product-subtitle">단독 착용은 물론 재킷이나 코트 안에도 깔끔하게 레이어링</div>
+      <div class="product-price">299,000원</div>
     </div>
 
     <div class="product-image-block">
-      <div class="product-main-image" style="background-image:url('../images/knit10.jpg');"></div>
+      <div class="product-main-image" id="mainImage" style="background-image:url('../images/cstz3c2304_i0_01.JPG');"></div>
+      <div class="thumbnail-row">
+        <div class="thumbnail active" style="background-image:url('../images/cstz3c2304_i0_01.JPG');" onclick="changeImage('../images/cstz3c2304_i0_01.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_02.JPG');" onclick="changeImage('../images/cstz3c2304_i0_02.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_03.JPG');" onclick="changeImage('../images/cstz3c2304_i0_03.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_04.JPG');" onclick="changeImage('../images/cstz3c2304_i0_04.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_05.JPG');" onclick="changeImage('../images/cstz3c2304_i0_05.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_06.JPG');" onclick="changeImage('../images/cstz3c2304_i0_06.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_07.JPG');" onclick="changeImage('../images/cstz3c2304_i0_07.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_08.JPG');" onclick="changeImage('../images/cstz3c2304_i0_08.JPG', this)"></div>
+        <div class="thumbnail" style="background-image:url('../images/cstz3c2304_i0_09.JPG');" onclick="changeImage('../images/cstz3c2304_i0_09.JPG', this)"></div>
+      </div>
     </div>
 
   </div>
 
   <div class="product-description">
     <div class="description-text">
-      부드러운 니트 조직과 앞판의 패디드 디테일을 조화시켜 보온성과 스타일을 균형 있게 담았습니다. 목선을 안정적으로 감싸는 칼라와 집업 디자인이 깔끔한 인상을 주며, 셔츠·터틀넥·스웨트 셔츠 등 다양한 이너와 손쉽게 레이어링할 수 있습니다. 간절기에는 가벼운 아우터로, 한겨울에는 코트 안의 보온 레이어로 활용하기 좋은 실용적인 프리미엄 캐주얼입니다.
+      울 100% 소재의 포근한 감촉과 은은한 베이지 멜란지 톤이 조화를 이루는 모크넥 니트입니다. 목선을 부담스럽지 않게 감싸는 단정한 디자인과 군더더기 없는 실루엣으로, 단독 착용은 물론 재킷이나 코트 안에도 깔끔하게 레이어링할 수 있습니다. 슬랙스와 매치한 비즈니스 캐주얼부터 치노 팬츠나 데님을 활용한 여유로운 주말 스타일까지 폭넓게 어울리는 활용도 높은 시즌 아이템입니다
     </div>
 
     <div class="info-section-title">[상품정보고시]</div>
     <div class="info-list">
-      품번: CSTZ3C2303<br>
-      색상: 네이비<br>
-      소재: 캐시미어 5% · 울 50% · 나일론 45%<br>
+      품번: CSTZ3C2304<br>
+      색상: 베이지<br>
+      소재: 울 100%<br>
       제조국: 중국
     </div>
 
@@ -97,9 +112,18 @@ body { font-family: "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #
   </div>
 
   <div class="button-row">
-    <a href="../categories/knit-vest.html" class="btn btn-outline">목록</a>
+    <a href="../index.html" class="btn btn-outline">목록</a>
     <a href="https://smartstore.naver.com/cm900" class="btn btn-fill">온라인 구매</a>
   </div>
+
+
+  <script>
+  function changeImage(src, el) {
+    document.getElementById('mainImage').style.backgroundImage = "url('" + src + "')";
+    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+  </script>
 
 </body>
 </html>
